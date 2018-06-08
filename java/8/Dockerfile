@@ -15,7 +15,7 @@ RUN apt-get update && \
     cd /opt && \
     wget https://download.jetbrains.com/idea/ideaIU-2018.1.4.tar.gz && \
     tar -xvzf ideaIU-2018.1.4.tar.gz && \
-    rm  ideaIC-2018.1.1.tar.gz 
+    rm  ideaIU-2018.1.4.tar.gz 
 
 USER developer
 ENV HOME /home/developer
