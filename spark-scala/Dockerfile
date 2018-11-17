@@ -1,4 +1,4 @@
-FROM java:8
+FROM java:8-jdk
 
 RUN apt-get update && \
     apt-get -y install maven git sudo && \
@@ -21,4 +21,9 @@ RUN apt-get update && \
     tar -xvzf scala-2.12.7.tgz && \
     rm scala-2.12.7.tgz && \
     tar -xvzf spark-2.4.0-bin-hadoop2.7.tgz && \
+    mv spark-2.4.0-bin-hadoop2.7 spark-2.4.0 && \
     rm spark-2.4.0-bin-hadoop2.7.tgz
+
+ENV  SPARK_HOME="/opt/spark-2.4.0/"
+ENV  SCALA_HOME="/opt/scala-2.12.7"
+ENV  PATH=$PATH:${SPARK_HOME}/bin:${SCALA_HOME}/bin
