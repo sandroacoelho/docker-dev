@@ -7,7 +7,7 @@ Check the complete article at https://medium.com/@sandroathaide/working-effectiv
 
 ## About docker
 
-Please see the [Docker installation documentation] (https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
+Please see the [Docker installation documentation](https://docs.docker.com/installation/) for details on how to upgrade your Docker daemon.
 
 ## How to use
 
